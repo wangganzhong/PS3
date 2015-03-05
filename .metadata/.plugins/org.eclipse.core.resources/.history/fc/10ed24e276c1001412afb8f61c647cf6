@@ -1,0 +1,12 @@
+public class totalTuition {
+public static void main(String[] args) {
+double tuition=10000;
+double sum=0.0;
+for(int year=1;year<=10;year++)
+{
+    tuition+=(tuition*0.05);
+    sum+=tuition;
+}
+   System.out.printf("The tuition for the ten years is:%.2f\n",sum);
+}
+}

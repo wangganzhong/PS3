@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class totalTuition {
+
+public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+
+    System.out.println("Enter your tuition increasing rate:");
+    double rate = input.nextDouble();
+
+    System.out.println("Enter your first year tuition:");
+    double totalTuition = input.nextDouble();
+
+    double sum = 0.0;
+    for (int year=1;year<=4;year++) {
+
+    totalTuition+=(totalTuition*rate);
+    sum+=totalTuition;
+
+    }
+
+    System.out.printf("The total coast of tuition is: %.2f\n", sum);
+
+}	   
+
+ 
+
+}
